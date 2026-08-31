@@ -4,8 +4,8 @@
   "version": "0.2.0",
   "description": "Technical writing workflows: README updates, weekly review summaries, README hygiene, and documentation-focused agents.",
   "author": {
-    "name": "Cursor Team",
-    "email": "hi@cursor.com"
+    "name": "Acme Engineering",
+    "email": "engineering@acme.example"
   },
   "license": "MIT",
   "keywords": ["cursor", "plugin", "docs", "readme", "markdown", "technical-writing"],

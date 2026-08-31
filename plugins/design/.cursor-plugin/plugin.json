@@ -4,8 +4,8 @@
   "version": "0.2.0",
   "description": "Design workflows for wireframes, mockups, creative direction, and UI implementation handoff.",
   "author": {
-    "name": "Cursor Team",
-    "email": "hi@cursor.com"
+    "name": "Acme Engineering",
+    "email": "engineering@acme.example"
   },
   "license": "MIT",
   "keywords": ["cursor", "plugin", "design", "wireframes", "ui"]

@@ -1,6 +1,6 @@
-# Cursor Fundamentals
+# Acme Engineering
 
-**Cursor Fundamentals** (`cursor-fundamentals`) is a Cursor Team Marketplace built around one idea: give every function a small, focused plugin that encodes how the team actually works. Each plugin contributes the minimum set of rules, skills, agents, and MCP servers needed to raise quality in that function without overlapping with the others.
+**Acme Engineering** (`acme-engineering`) is Acme's Cursor Team Marketplace. It is a customized copy of the Cursor Fundamentals template: each function gets a small, focused plugin that encodes how Acme actually works. Each plugin contributes the minimum set of rules, skills, agents, and MCP servers needed to raise quality in that function without overlapping with the others.
 
 ## Plugins
 
@@ -35,55 +35,24 @@ Focused specifically on automated test workflows. Cursor Starter Pack still sets
 
 ## Use this marketplace on your team
 
-Cursor imports a team marketplace by reading `.cursor-plugin/marketplace.json` from a GitHub repository. There are two realistic ways to consume Cursor Fundamentals: **point at this public repo directly**, or **fork it** and tailor the plugins to your team. Pick based on how much you want to customize and how much upstream change you're willing to inherit.
+Cursor imports a team marketplace by reading `.cursor-plugin/marketplace.json` from a GitHub repository. This repo is already the **fork-and-customize** path: marketplace `name` / `displayName` / `owner` are Acme Engineering, and each plugin lists Acme as the author. Import **this** GitHub URL — not the upstream template — so the dashboard shows Acme's marketplace.
 
-### Option A: Point at the public repo directly (no fork)
-
-Fastest path. Import this repo's GitHub URL as your team marketplace. Your team automatically tracks every commit upstream makes to the default branch.
+To consume it on the Acme team:
 
 1. In Cursor, go to **Dashboard → Settings → Plugins → Import**.
 2. Paste this repo's GitHub URL.
 3. Pick access groups and mark each plugin **Required** (auto-installed) or **Optional** (developer choice).
-4. Save.
+4. Save. If the repo is private, grant the Cursor GitHub app read access when prompted.
 
-**Benefits**
+What was renamed (the demo):
 
-- Zero maintenance. No fork, no merges, no CI.
-- New plugins and fixes show up automatically as upstream ships them.
-- Simple story for small teams that don't need org-specific tweaks yet.
+- Marketplace id: `acme-engineering`
+- Display name and owner: **Acme Engineering**
+- Plugin authors: **Acme Engineering** (`engineering@acme.example`)
 
-**Risks**
+Plugin folder names (`cursor-starter-pack`, `design`, and so on) are unchanged so existing `source` paths keep working. Rename those only if you want new plugin ids in the dashboard.
 
-- You inherit **every** upstream change on the default branch, including breaking ones. Upstream decisions about plugin scope, agents, or MCP servers become your decisions by default.
-- You cannot add org-specific rules, agents, or MCP credentials to the marketplace itself. You can still configure MCP env vars locally, but plugin content stays whatever upstream ships.
-- On the **Teams** plan you only get 1 team marketplace, so "pointing at upstream" uses up that slot and blocks you from publishing your own.
-- You are trusting the upstream maintainer. If you don't control this repo, treat this option like installing any third-party extension and review the contents first.
-
-**Best for:** teams evaluating Cursor team marketplaces, small teams happy with the defaults, or orgs that explicitly want to track an official/maintained baseline.
-
-### Option B: Fork and publish your own (recommended for most teams)
-
-Fork this repo into your GitHub org, edit it to match your stack and conventions, and register the fork as your team marketplace. You own what ships, and you can still pull upstream updates as PRs when you want them.
-
-1. Fork this repository to your team's GitHub organization (for example, `your-org/cursor-fundamentals`).
-2. Clone the fork locally and edit plugin contents (`rules/`, `skills/`, `agents/`, `mcp.json`) to reflect your stack, conventions, and tooling. Remove plugins you don't want.
-3. If you rename the marketplace, update both `name` (lowercase kebab-case) and `displayName` in [.cursor-plugin/marketplace.json](.cursor-plugin/marketplace.json).
-4. Run `node scripts/validate-template.mjs` to catch manifest, frontmatter, and path issues before publishing.
-5. Commit and push. If the repo is private, grant the Cursor GitHub app read access when prompted.
-6. In Cursor, go to **Dashboard → Settings → Plugins → Import**, paste your fork's URL, pick access groups, and mark each plugin **Required** or **Optional**.
-
-**Benefits**
-
-- Full control over plugin content, scope, and MCP wiring.
-- Org-specific rules and agents live in one place, versioned in git alongside your other internal tools.
-- Updates ship when *you* push to the default branch, on your review cadence.
-
-**Risks**
-
-- You own maintenance: merging upstream updates, validating manifests, and keeping plugin docs aligned with reality.
-- Public forks are public on GitHub; if your plugins reference internal systems, use a private fork (or "Use this template") and grant the Cursor GitHub app access.
-
-**Best for:** any team that wants to encode its own conventions, credentials, or tool choices — which is most teams once they move past evaluation.
+To rebrand again later, edit `name` (lowercase kebab-case), `displayName`, and `owner` in [.cursor-plugin/marketplace.json](.cursor-plugin/marketplace.json), update `author` in each `plugins/*/.cursor-plugin/plugin.json`, then run `node scripts/validate-template.mjs` before you push.
 
 ## Further reading
 

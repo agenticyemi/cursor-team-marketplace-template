@@ -1,12 +1,12 @@
 {
-  "name": "cursor-fundamentals",
-  "displayName": "Cursor Fundamentals",
+  "name": "acme-engineering",
+  "displayName": "Acme Engineering",
   "owner": {
-    "name": "Cursor Team",
-    "email": "hi@cursor.com"
+    "name": "Acme Engineering",
+    "email": "engineering@acme.example"
   },
   "metadata": {
-    "description": "A focused Team Marketplace: starter engineering defaults, product management, design, technical writing, and testing.",
+    "description": "Acme Engineering team marketplace: starter engineering defaults, product management, design, technical writing, and testing.",
     "version": "0.2.0",
     "pluginRoot": "plugins"
   },

@@ -6,6 +6,7 @@
   "license": "MIT",
   "keywords": ["cursor-starter-pack", "starter", "onboarding", "engineering", "cursor"],
   "author": {
-    "name": "Cursor Field Engineering"
+    "name": "Acme Engineering",
+    "email": "engineering@acme.example"
   }
 }
