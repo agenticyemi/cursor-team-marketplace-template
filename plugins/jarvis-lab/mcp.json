@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "jarvis-lab": {
+      "command": "python3",
+      "args": ["${CURSOR_PLUGIN_ROOT}/mcp_launcher.py"]
+    }
+  }
+}

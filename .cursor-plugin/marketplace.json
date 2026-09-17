@@ -35,6 +35,11 @@
       "name": "testing",
       "source": "testing",
       "description": "Test authoring and execution: unit, E2E, and browser automation skills plus test engineer and test runner agents"
+    },
+    {
+      "name": "jarvis-lab",
+      "source": "jarvis-lab",
+      "description": "Lab stdio MCP for Attila/Newfold allowlist repro (Jarvis-shaped)"
     }
   ]
 }
