@@ -1,0 +1,12 @@
+{
+  "name": "jarvis-lab",
+  "displayName": "Jarvis Lab",
+  "version": "0.1.0",
+  "description": "Lab-only stdio MCP plugin for Attila/Newfold MCP allowlist repro (Jarvis-shaped).",
+  "author": {
+    "name": "Acme Engineering",
+    "email": "engineering@acme.example"
+  },
+  "license": "MIT",
+  "keywords": ["cursor", "plugin", "mcp", "lab", "allowlist", "jarvis"]
+}
