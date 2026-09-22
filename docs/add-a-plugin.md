@@ -63,7 +63,7 @@ Edit `.cursor-plugin/marketplace.json` and append a new entry:
 node scripts/validate-template.mjs
 ```
 
-Fix all reported errors before committing.
+Fix all reported errors before committing. Run the validator from the repository root, so relative plugin and marketplace paths resolve correctly.
 
 ## 5. Common pitfalls
 
