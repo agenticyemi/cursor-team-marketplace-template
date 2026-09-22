@@ -1,6 +1,6 @@
 # Add a plugin
 
-Add a new plugin under `plugins/` and register it in `.cursor-plugin/marketplace.json`. Plugin folder names must be kebab-case, and must match the `name` field in both the plugin manifest and the marketplace entry.
+Add a new plugin under `plugins/` and register it in `.cursor-plugin/marketplace.json`. Plugin folder names must be kebab-case, and must match the `name` field in both the plugin manifest, and the marketplace entry.
 
 ## 1. Create plugin directory
 
