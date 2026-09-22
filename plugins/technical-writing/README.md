@@ -10,6 +10,6 @@ Focused plugin for developer-facing documentation:
 
 Markdown **file naming** conventions live in the **Cursor Starter Pack** (`markdown-naming` skill), not here, so naming rules stay in one place.
 
-The **Cursor Starter Pack** still owns the baseline expectation to document important behavior. This plugin owns the documentation workflows themselves: README updates, README hygiene, and longer-form developer-facing documentation when prose is the deliverable.
+The **Cursor Starter Pack** still owns the baseline expectation to document important behavior. This plugin owns the documentation workflows themselves: README updates, README hygiene, API reference and guide authoring, and longer-form developer-facing documentation when prose is the deliverable.
 
 Plugin id: **`technical-writing`**. Display name: **Technical Writing**.
