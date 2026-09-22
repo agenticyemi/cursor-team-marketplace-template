@@ -3,7 +3,7 @@
 Focused plugin for developer-facing documentation:
 
 - **update-readme** — README structure, startup steps, architecture diagram
-- **weekly-review** — Summarize progress and themes for stakeholders
+- **weekly-review** — Summarize progress and themes for stakeholders.
 - **readme-hygiene** — When a code change should trigger a README update
 - **docs-writer** agent — Long-form docs, API references, guides, and substantial prose updates
 - **Notion MCP** in `mcp.json` (optional) for teams that publish to Notion
