@@ -2,7 +2,7 @@
   "name": "technical-writing",
   "displayName": "Technical Writing",
   "version": "0.2.0",
-  "description": "Technical writing workflows: README updates, weekly review summaries, README hygiene, and documentation-focused agents.",
+  "description": "Technical writing workflows: README updates, weekly review summaries, README hygiene, API reference and guide authoring, and documentation-focused agents.",
   "author": {
     "name": "Acme Engineering",
     "email": "engineering@acme.example"
